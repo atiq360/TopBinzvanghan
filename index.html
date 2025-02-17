@@ -9,45 +9,66 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: black;
-            color: white;
+            background-color: #f8f8f8;
+            color: #222;
             text-align: center;
         }
         header {
-            background-color: red;
+            background-color: #d32f2f;
             padding: 20px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
         }
         .logo {
-            width: 250px;
+            width: 300px;
             max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
+            padding: 10px 0;
         }
         nav {
             background-color: #222;
-            padding: 10px;
+            padding: 15px;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
         }
         section {
-            padding: 20px;
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        .bin-image {
-            width: 50%;
-            border-radius: 10px;
+        .btn {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
             margin-top: 20px;
         }
+        .email {
+            font-weight: bold;
+            color: #d32f2f;
+            text-decoration: none;
+        }
+        .contact-info {
+            font-size: 18px;
+            margin-top: 10px;
+        }
         footer {
-            background-color: red;
+            background-color: #222;
+            color: white;
             padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -55,15 +76,15 @@
 
     <header>
         <img src="logo.png" alt="TopBinz Vaughan Logo" class="logo">
-        <h1>TopBinz Vaughan</h1>
+        <p>Find the best deals at unbeatable prices!</p>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="rules.html">Rules</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#rules">Rules</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <section id="home">
@@ -72,8 +93,37 @@
         <img src="pic1.png" alt="Bin Shopping Experience" class="bin-image">
     </section>
 
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a bin store that offers **exciting deals** every day of the week. Each item is priced according to the day, ensuring you get the best value.</p>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>All bin items will be priced accordingly with the day of the week:</p>
+        <p><strong>Saturday - $20</strong> | <strong>Sunday - $15</strong> | <strong>Monday - $11</strong> | <strong>Tuesday - $8</strong> | <strong>Wednesday - $6</strong> | <strong>Thursday - $3</strong> | <strong>Friday - $1.50</strong></p>
+        <a href="#rules" class="btn">Check Out The Rules</a>
+    </section>
+
+    <section id="rules">
+        <h2>Shopping Rules and Procedures</h2>
+        <ul>
+            <li>All items are sold as-is. **No returns or exchanges.**</li>
+            <li>Use the Blue Ikea bag for shopping.</li>
+            <li>Respect staff and other shoppers.</li>
+            <li>Do not open boxes or packages without assistance.</li>
+            <li>Follow all safety and COVID-19 rules.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p class="contact-info">📍 1118 Centre St Unit 25, Thornhill, ON L4J 7R9, Canada</p>
+        <p class="contact-info">📞 289-597-1857</p>
+        <p class="contact-info">📧 <a href="mailto:info@topbinzvaughan.ca" class="email">info@topbinzvaughan.ca</a></p>
+    </section>
+
     <footer>
-        <p>Contact us: <a href="mailto:info@topbinzvaughan.ca">info@topbinzvaughan.ca</a></p>
         <p>&copy; 2025 TopBinz Vaughan. All rights reserved.</p>
     </footer>
 
